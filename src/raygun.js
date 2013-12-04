@@ -181,7 +181,7 @@
       'Details': {
         'Error': {
           'ClassName': stackTrace.name,
-          'Message': stackTrace.message || options.status || 'Script error',
+          'Message': stackTrace.message || options.status + ' ' + options.url  || 'Script error',
           'StackTrace': stack
         },
         'Environment': {
