@@ -94,6 +94,7 @@
   /* internals */
 
   function processJQueryAjaxError(event, jqXHR, ajaxSettings, thrownError) {
+
     Raygun.send(thrownError || event.type, {
       status: jqXHR.status,
       statusText: jqXHR.statusText,
